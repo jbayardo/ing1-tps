@@ -1,0 +1,46 @@
+{
+  "type": "object",
+  "properties": {
+    "id": { "type": "number"},
+    "timestamp_suceso": { "type": "timestamp" },
+    "descripcion": { "type": "string" },
+    "personas": {
+      "type": "array",
+      "items": { "type": "number" }
+    },
+    "estado": {
+      "type": "string",
+      "enum": [
+        "pendiente",
+        "congelado",
+        "descartado",
+        "resuelto"
+      ]
+    },
+    "categoria": { "type": "string" },
+    "lugar_suceso": {
+      "type": "object",
+      "properties": {
+        "calle": { "type": "string" },
+        "numero": { "type": "number" },
+        "localidad": { "type": "string" },
+        "provincia": { "type": "string" }
+      },
+      "required": ["calle", "numero", "localidad", "provincia"]
+    },
+    "evidencia": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "descripcion": { "type": "string" },
+          "timestamp_ingreso": { "type": "timestamp" },
+          "timestamp_hallazgo": { "type": "timestamp" },
+          "timestamp_sellado": { "type": "timestamp" }
+        },
+        "required": ["descripcion", "timestamp_ingreso", "timestamp_hallazgo"]
+      }
+    }
+  },
+  "required": ["id", "timestamp_suceso", "estado", "categoria", "lugar_suceso"]
+}
