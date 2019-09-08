@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "fecha": { "type": "date" },
+    "crimenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "categoria": { "type": "string" },
+          "casos": {
+            "type": "array",
+            "items": { "type": "number" }
+          }
+        }
+      }
+    },
+    "required": ["fecha", "crimenes"]
+  }
+}

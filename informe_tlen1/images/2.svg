@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<svg height="200" version="1.1" width="200" xmlns="http://www.w3.org/2000/svg">
+  <rect fill="yellow" height="200" width="200" x="0" y="0"/>
+  <polygon fill="none" points="0,0 50,50 0,100" stroke="black" stroke-width="3"/>
+  <polygon fill="none" points="0,0 50,50 100,0" stroke="black" stroke-width="3"/>
+  <polygon fill="none" points="0,100 50,150 0,200" stroke="black" stroke-width="3"/>
+  <polygon fill="none" points="0,200 50,150 100,200" stroke="black" stroke-width="3"/>
+  <polygon fill="none" points="100,200 150,150 200,200" stroke="black" stroke-width="3"/>
+  <polygon fill="none" points="200,200 150,150 200,100" stroke="black" stroke-width="3"/>
+  <polygon fill="none" points="200,100 150,50 200,0" stroke="black" stroke-width="3"/>
+  <polygon fill="none" points="200,0 150,50 100,0" stroke="black" stroke-width="3"/>
+</svg>

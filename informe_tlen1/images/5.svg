@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<svg height="300" version="1.1" width="400" xmlns="http://www.w3.org/2000/svg">
+  <rect height="150" rx="20" ry="20" style="fill:red;stroke:black;stroke-width:5;opacity:0.5" width="150" x="50" y="20"/>
+  <circle cx="125" cy="95" fill="red" r="50"/>
+  <circle cx="125" cy="95" fill="black" r="25"/>
+  <text x="10" y="200">Metiste un cutucuchillo y te pode queda lectrificada loca</text>
+</svg>

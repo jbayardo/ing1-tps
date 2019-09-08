@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "localidad": { "type": "string" },
+    "casos": {
+      "type": "array",
+      "items": { "type": "number" }
+    },
+    "required": ["localidad", "casos"]
+  }
+}

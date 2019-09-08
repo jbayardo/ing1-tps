@@ -1,0 +1,184 @@
+\documentclass[10pt,a3paper, ,landscape]{article}
+\usepackage[left=0.86in,right=0.86in, top=60pt, bottom=60pt]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+\usepackage{caratula}
+\usepackage{xcolor}
+
+\usepackage{graphicx}
+\usepackage{enumerate}
+
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{amsmath}
+
+\usepackage{framed}
+\usepackage{booktabs}
+\usepackage{float}
+\floatplacement{figure}{h!}
+
+\usepackage{lscape}
+
+\materia{Ingeniería de Software II} % obligatorio
+
+\titulo{TP1 \\ Apéndice}
+\subtitulo{SimOil \\ \today}
+
+\integrante{Martín Baigorria}{575/14}{martinbaigorria@gmail.com}
+\integrante{Federico Beuter}{827/13}{federicobeuter@gmail.com}
+\integrante{Mauro Cherubini}{835/13}{cheru.mf@gmail.com}
+\integrante{Christian Cuneo}{755/13}{chriscuneo93@gmail.com}
+\integrante{Mario Ezequiel Ginsberg}{145/14}{ezequielginsberg@gmail.com}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\pagebreak
+
+\section{Diseño}
+
+\subsection{Diagramas de clases}
+
+\subsubsection{Simulador}
+
+\begin{figure}[H]
+\centerline{\includegraphics[scale=0.7]{images/DiagramaDeClases_deSimulador.png}}
+\caption{Diagrama de clases del Simulador}
+\end{figure}
+
+\subsubsection{Escenario de Simulación}
+
+\begin{figure}[H]
+\centerline{\includegraphics[scale=0.5]{images/DiagramaDeClases_deEscenario.png}}
+\caption{Diagrama de clases de un Escenario de Simulación}
+\end{figure}
+
+\subsubsection{Red de Distribución}
+
+\begin{figure}[H]
+\centerline{\includegraphics[scale=0.38]{images/DiagramaDeClases_deRedDeDistribucion.png}}
+\caption{Diagrama de clases de la Red de Distribución}
+\end{figure}
+
+\subsubsection{Red de Pozos}
+
+\begin{figure}[H]
+\centerline{\includegraphics[scale=0.38]{images/DiagramaDeClases_deRedDePozos.png}}
+\caption{Diagrama de clases de la Red de Pozos}
+\end{figure}
+
+\subsubsection{Archivo de Planeamiento}
+
+\begin{figure}[H]
+\centerline{\includegraphics[scale=0.8]{images/DiagramaDeClases_ArchivoDePlaneamiento.png}}
+\caption{Diagrama de clases del Archivo de Planeamiento}
+\end{figure}
+
+\subsubsection{Directorio de Ingeniería}
+
+\begin{figure}[H]
+\centerline{\includegraphics[scale=0.75]{images/DiagramaDeClases_deDirectorioDeIngenieria.png}}
+\caption{Diagrama de clases del Directorio de Ingeniería}
+\end{figure}
+
+\subsubsection{Constructora}
+
+\begin{figure}[H]
+\centerline{\includegraphics[scale=0.7]{images/DiagramaDeClases_deConstructora.png}}
+\caption{Diagrama de clases de la Constructora}
+\end{figure}
+
+\subsubsection{Excavador}
+
+\begin{figure}[H]
+\centerline{\includegraphics[scale=0.7]{images/DiagramaDeClases_deExcavador.png}}
+\caption{Diagrama de clases de un Excavador}
+\end{figure}
+
+\subsubsection{Fletador}
+
+\begin{figure}[H]
+\centerline{\includegraphics[scale=0.38]{images/DiagramaDeClases_deFletador.png}}
+\caption{Diagrama de clases de un Fletador}
+\end{figure}
+
+\subsubsection{AdministradorFinanciero}
+
+\begin{figure}[H]
+\centerline{\includegraphics[scale=0.38]{images/DiagramaDeClases_deAdministradorFinanciero.png}}
+\caption{Diagrama de clases de un AdministradorFinanciero}
+\end{figure}
+
+\subsubsection{Registradores}
+  
+\begin{figure}[H]
+\centerline{\includegraphics[scale=0.8]{images/DiagramaDeClases_deRegistrador.png}}
+\caption{Diagrama de clases de Registradores}
+\end{figure}
+
+\pagebreak
+
+\subsubsection{Distribuidor}
+
+\begin{figure}[H]
+\centerline{\includegraphics[scale=0.8]{images/DiagramaDeClases_deDistribuidor.png}}
+\caption{Diagrama de clases del Distribuidor}
+\end{figure}
+
+\pagebreak
+
+\subsection{Diagramas de secuencias/colaboración}
+
+\subsubsection{Planear Proyecto}
+
+\centerline{\includegraphics[scale=0.9]{images/secuenciaPlanearProyecto1.png}}
+\vspace{0.25cm}
+\centerline{\includegraphics[scale=0.9]{images/secuenciaPlanearProyecto2.png}}
+
+\pagebreak
+
+\subsubsection{Construcción}
+\centerline{\includegraphics[scale=0.4]{images/secuenciaConstruir.png}}
+\vspace{1cm}
+\centerline{\includegraphics[scale=0.4]{images/secuenciaConstruirInfraestructura.png}}
+
+\subsubsection{Distribución}
+
+\centerline{\includegraphics[scale=0.65]{images/secuenciaDistribucion.png}}
+
+\pagebreak
+
+\subsubsection{Distribución: Extracción}
+
+\centerline{\includegraphics[scale=0.5]{images/secuenciaDistribucionMotivo1.png}}
+\vspace{0.25cm}
+\centerline{\includegraphics[scale=0.45]{images/secuenciaDistribucionMotivo2.png}}
+
+\pagebreak
+
+\subsubsection{Distribución: Inyección con Tanque de Agua}
+
+\centerline{\includegraphics[scale=0.6]{images/secuenciaDistribucionMotivoAgua1.png}}
+\vspace{0.5cm}
+\centerline{\includegraphics[scale=0.5]{images/secuenciaDistribucionMotivoAgua2.png}}
+
+\pagebreak
+
+\subsubsection{Equipamiento}
+
+\centerline{\includegraphics[scale=0.45]{images/secuenciaEquipamiento.png}}
+\vspace{0.25cm}
+\centerline{\includegraphics[scale=0.7]{images/secuenciaEquipamientoTransportar.png}}
+
+\subsubsection{Excavación}
+
+\centerline{\includegraphics[scale=0.45]{images/secuenciaExcavacion1.png}}
+\vspace{0.25cm}
+\centerline{\includegraphics[scale=0.45]{images/secuenciaExcavacion2.png}}
+
+\end{document}

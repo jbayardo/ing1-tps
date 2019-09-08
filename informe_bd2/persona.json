@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "properties": {
+    "dni": { "type": "number" },
+    "nombre": { "type": "string" },
+    "apellido": { "type": "string" },
+    "fecha_nacimiento": { "type": "date" },
+    "involucrado": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "rol": { "type": "string" },
+          "caso": { "type": "number" }
+        }
+      }
+    },
+    "culpable": {
+      "type": "array",
+      "items": { "type": "number" }
+    },
+    "telefono": { "type": "number" },
+    "domicilio": {
+      "type": "object",
+      "properties": {
+        "calle": { "type": "string" },
+        "numero": { "type": "number" },
+        "localidad": { "type": "string" },
+        "provincia": { "type": "string" }
+      }
+    },
+    "oficial": { "type": "boolean" }
+  },
+  "required": ["dni", "nombre", "apellido"]
+}
